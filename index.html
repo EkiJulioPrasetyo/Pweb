@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'>
+    <title>Tugas Pweb</title>
+    <style>
+        body {
+            background: url('https://c4.wallpaperflare.com/wallpaper/274/602/475/pokemon-pichu-pokemon-pikachu-raichu-pokemon-wallpaper-preview.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        h1 {
+            border: 2px solid #ffffff;
+            padding: 10px;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .button-container {
+            margin: 20px;
+        }
+        button {
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: orange;
+            transform: scale(1.1);
+        }
+        .content {
+            width: 90%;
+            margin: auto;
+            text-align: justify;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        h2 {
+            border: 2px solid #ffffff;
+            padding: 7px;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pichu, Pikachu, Raichu</h1>
+        <div>
+            <img src='https://c4.wallpaperflare.com/wallpaper/274/602/475/pokemon-pichu-pokemon-pikachu-raichu-pokemon-wallpaper-preview.jpg' width='400'>
+        </div>
+    </header>
+
+    <div class="button-container">
+        <button onclick="goToPage('pichu.html')">Pichu</button>
+        <button onclick="goToPage('pikachu.html')">Pikachu</button>
+        <button onclick="goToPage('raichu.html')">Raichu</button>
+    </div>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <main class='content'>
+        <h2>Description</h2>
+        <p>
+            Pichu is small and playful but struggles to 
+            control its electricity, often shocking itself 
+            by accident. As it evolves into Pikachu, it 
+            learns to store and release electricity more 
+            efficiently, using its tail to communicate with 
+            others. When it reaches its final form, Raichu, 
+            its power surges dramatically, allowing it to 
+            unleash powerful electric attacks while using 
+            its tail to ground excess energy.
+    </main>
+</body>
+</html>
